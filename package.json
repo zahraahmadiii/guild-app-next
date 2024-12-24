@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:html": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "jquery": "^3.6.3",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.54.2",
+    "react-multi-date-picker": "^4.5.2",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}

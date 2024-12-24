@@ -1,0 +1,345 @@
+*{
+  font-family: yekanBakh;
+}
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 50px;
+  /* border:5px solid red */
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.step-progress{
+      /* display: inline-block; */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+      /* margin-right: auto; */
+
+}
+.card{
+  width: 210px;
+  height: 210px;
+}
+.title{
+  padding: 50px 10px 10px 0px;
+  font-family: yekanBakh;
+}
+.card-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap:85px; /* Spacing between input and card */
+}
+.font-text{
+  font-family: yekanBakh;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Input Field */
+.custom-textinput {
+ width: 30%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: yekanBakh;
+}/* Wrapper for Radio Buttons under تبعه */
+.custom-textinput:focus {
+  border-color: #350063; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(40, 14, 124, 0.5); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.additional-options {
+  margin-top: 10px; /* Space between card content and radio buttons */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between each radio button */
+  padding-left: 10px;
+}
+
+/* Radio Button Styling */
+.additional-options label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Spacing between radio input and text */
+  cursor: pointer;
+  font-family: yekanBakh;
+}
+
+.additional-options input[type="radio"] {
+  accent-color: #007bff; /* Change the radio button color */
+}
+.js-btn-next{
+  font-family: yekanBakh;
+  /* width: 10px;
+  height: 10px; */
+}
+.js-btn-next.disabled {
+  cursor: not-allowed;
+  background-color: #858585; /* Example gray background */
+}
+.actions ul li span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  gap: 8px;
+}
+.actions ul li span i{
+  font-size: 16px;
+  font-weight: 700;
+
+}
+.actions ul li button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  gap: 8px;
+}
+.actions ul li button i{
+  font-size: 16px;
+  font-weight: 700;
+
+}
+body{
+  overflow: hidden;
+}
+.card-input-wrapper2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap:85px; /* Spacing between input and card */
+}
+.input {
+  width: 100%; /* Full-width input */
+  padding: 10px; /* Comfortable padding */
+  margin-top: 10px; /* Space from preceding elements */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Readable font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.input:focus {
+  border-color: #350063; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(40, 14, 124, 0.5); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.input.input-error {
+  border-color: #ff4d4f; /* Red border for errors */
+  box-shadow: 0 0 5px rgba(255, 77, 79, 0.5); /* Red glow for errors */
+}
+
+.error-message {
+  color: #ff4d4f; /* Red text for error messages */
+  font-size: 8px; /* Smaller font for error text */
+  margin-top: 5px; /* Spacing from the input */
+}
+
+/* step 2 */
+.select-wrapper{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.select-option{
+  width: 100%;
+
+}
+.parvane-selection {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 50px 0px;
+  color: rgb(73, 73, 73);
+  /* display: inline-block; */
+}
+.parvane-selection label{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+/* Container for the form group */
+.form-group {
+  margin-bottom: 20px; /* Space between form elements */
+  display: flex;
+  flex-direction: row; /* Stack label and input vertically */
+  gap: 10px; /* Add space between label and select */
+  align-items: center;
+}
+
+/* Spacing for margin-top applied in the component */
+.mt-3 {
+  margin-top: 15px !important;
+}
+
+/* Styling for the label */
+.form-group label {
+  font-size: 16px; /* Larger font for better readability */
+  font-weight: 600; /* Make the text slightly bold */
+  color: #333; /* Neutral text color */
+  margin-bottom: 5px; /* Space below the label */
+}
+
+/* Styling for the select dropdown */
+.form-control {
+  width: 120px; /* Full width of the container */
+  padding: 7px; /* Space inside the dropdown */
+  font-size: 16px; /* Text size for better readability */
+  color: #555; /* Neutral text color */
+  background-color: #fff; /* White background for a clean look */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 4px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth hover and focus effects */
+  appearance: none; /* Remove native dropdown arrow */
+  -webkit-appearance: none; /* Support for Webkit-based browsers */
+  -moz-appearance: none; /* Support for Mozilla-based browsers */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23666' d='M7.293 9.293a1 1 0 011.414 0L10 10.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  font-family: yekanBakh;
+}
+
+/* Hover effect for select */
+.form-control:hover {
+  border-color:#350063;
+}
+
+/* Focus effect for select */
+.form-control:focus {
+  border-color: #350063; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(40, 14, 124, 0.5); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Disabled select styling */
+.form-control:disabled {
+  background-color: #e9ecef; /* Light grey background */
+  cursor: not-allowed; /* Indicate non-interaction */
+}
+
+/* Placeholder option */
+.form-control option[value=""] {
+  color: #999; /* Light grey color for placeholder */
+  font-family: yekanBakh;
+  border-color: #350063; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(40, 14, 124, 0.5); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+.form-control option {
+  color: #161616; /* Light grey color for placeholder */
+  font-family: yekanBakh;
+}
+.inputs-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 115px;
+}
+
+.inputs {
+  width: 50%; /* Full-width input */
+  padding: 10px; /* Comfortable padding */
+  margin-top: 10px; /* Space from preceding elements */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Readable font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.inputs:focus {
+  border-color: #350063; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(40, 14, 124, 0.5); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* step 3 */
+.step3-inputs-wrapper{
+  margin-top: 70px; 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.step3-inputs{
+  margin-left: 8PX;
+  margin-bottom: 10px;
+width: 40%; /* Full-width input */
+padding: 10px; /* Comfortable padding */
+margin-top: 10px; /* Space from preceding elements */
+border: 1px solid #ccc; /* Light gray border */
+border-radius: 5px; /* Rounded corners */
+font-size: 14px; /* Readable font size */
+transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.datepicker-days{
+ display: none;
+}
+
+.step3-inputs:focus {
+  border-color: #350063; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(40, 14, 124, 0.5); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+.shahkar-button {
+  background-color: #350063; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: yekanBakh;
+}
+
+.shahkar-button:hover {
+  background-color:#350063; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  color: rgb(255, 255, 255);
+}
+
+.shahkar-button:active {
+  background-color: #350063; /* Even darker blue when clicked */
+}
+/* Add these styles to your global stylesheet or the component's CSS file */
+/* .form-content p {
+  font-size: 8px;
+} */
+
+/* step 4 */
+.header{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+.mobileContent{
+  margin-top: 100px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
