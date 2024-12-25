@@ -2,7 +2,7 @@ import Step1 from "../components/v1/step/step-1";
 import Step2 from "../components/v1/step/step-2";
 import Step3 from "../components/v1/step/step-3";
 import Step4 from "../components/v1/step/step-4";
-import Step5 from "../components/v1/step/step-5";
+// import Step5 from "../components/v1/step/step-5";
 export default function Home() {
   return (
     <div>
@@ -27,9 +27,9 @@ export default function Home() {
                 <li className="multisteps-form__progress-btn">
                   <span>4</span>
                 </li>
-                <li className="multisteps-form__progress-btn last">
+                {/* <li className="multisteps-form__progress-btn last">
                   <span>5</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
               <Step2 />
               <Step3 />
               <Step4 />
-              <Step5 />
+              {/* <Step5 /> */}
             </div>
           </form>
         </div>

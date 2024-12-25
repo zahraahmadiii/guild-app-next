@@ -116,7 +116,7 @@ class StepOne extends React.Component {
             <div className="top">
               <h4 className="step-no bottom-line title">اطلاعات هویتی</h4>
               <div className="step-progress ">
-                <span className="title">1 از 5</span>
+                <span className="title">1 از 4</span>
                 <div className="step-progress-bar">
                   <div className="progress">
                     <div className="progress-bar" style={{ width: "0%" }}></div>

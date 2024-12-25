@@ -14,14 +14,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.step-progress{
+.step-progress-bar{
       /* display: inline-block; */
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       width: 100%;
-      max-width: 500px;
+      max-width: 400px;
       /* margin-right: auto; */
 
 }
@@ -253,9 +253,14 @@ body{
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-bottom: 115px;
+  margin-bottom: 15px;
 }
-
+.dateWrapper{
+  width: 632px;
+}
+.rmdp-container{
+  width: 632px;
+}
 .inputs {
   width: 50%; /* Full-width input */
   padding: 10px; /* Comfortable padding */
@@ -282,7 +287,7 @@ body{
 .step3-inputs{
   margin-left: 8PX;
   margin-bottom: 10px;
-width: 40%; /* Full-width input */
+width: 200px; /* Full-width input */
 padding: 10px; /* Comfortable padding */
 margin-top: 10px; /* Space from preceding elements */
 border: 1px solid #ccc; /* Light gray border */
